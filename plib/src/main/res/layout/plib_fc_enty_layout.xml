@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="16dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="16dp">
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_weight="1"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:gravity="center_horizontal"
+        android:paddingLeft="4dp"
+        android:paddingRight="10dp"
+        android:src="@drawable/dai_folder"
+        />
+
+
+    <RelativeLayout
+        android:id="@+id/rel"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/image"
+        android:layout_toRightOf="@id/image"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/file_name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="marquee"
+            android:gravity="left"
+            android:paddingLeft="4dp"
+            android:singleLine="true"
+            android:textColor="#343434"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:typeface="sans"/>
+
+        <TextView
+            android:id="@+id/sub_file_info"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/file_name"
+            android:gravity="left"
+            android:paddingLeft="4dp"
+            android:singleLine="true"
+            android:textColor="#000000"
+            android:textSize="12sp"
+            android:textStyle="normal"
+            android:typeface="sans"/>
+
+        <TextView
+            android:id="@+id/file_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/sub_file_info"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:text="25kb"
+            android:textColor="#000000"
+            android:textSize="12sp"
+            android:textStyle="italic"
+            android:typeface="sans"/>
+    </RelativeLayout>
+
+
+</RelativeLayout>

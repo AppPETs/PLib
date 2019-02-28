@@ -1,0 +1,16 @@
+RANDFILE=C:\Users\arik\.rnd 
+[req] 
+default_bits=2048 
+default_keyfile=keyfile.pem 
+distinguished_name=req_distinguished_name 
+attributes=req_attributes 
+prompt=no 
+output_password=change 
+[req_distinguished_name] 
+C=DE 
+ST=Berlin 
+L=Berlin 
+O=DAI-Laboratory, TU-Berlin 
+OU=CC-SEC 
+CN=S-MASTER 
+[req_attributes] 

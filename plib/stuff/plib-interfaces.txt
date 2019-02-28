@@ -1,0 +1,66 @@
+Recommended plib interfaces:
+
+// ### UI ###
+
+//Call P-Lib UI from an Activity:
+startActivity(new Intent(this, PLibSettingsActivity.class));
+
+// ### ENCRYPTION/ANONYMIZATION ###
+
+/**
+ * Adapts a <code>FileInputStream</code> into a secured <code>CipherInputStream</code> for encryption.
+ * <p>
+ * THIS METHOD IS REGARDED AS A LEGAL SINK THROUGH THE PLIB!
+ *
+ * @param context
+ * @param fin the <code>FileInputStream</code>
+ *
+ * @return a secured <code>CipherInputStream</code> for regarded <Code>FileInputStream</Code> for encryption.
+ */
+public static CipherInputStream de.dailab.apppets.plib.crypt.PLibCrypt.encryptStream(Context context, FileInputStream fin)
+
+/**
+ * Adapts a <code>FileOutputStream</code> into a secured <code>CipherOutputStream</code> for decryption.
+ *
+ * @param context
+ * @param fout the <code>FileOutputStream</code>
+ *
+ * @return a secured <code>CipherOutputStream</code> for regarded <Code>FileOutputStream</Code> for decryption.
+ */
+public static CipherOutputStream de.dailab.apppets.plib.crypt.PLibCrypt.decryptStream(Context context, FileOutputStream fout)
+
+/**
+ * Anonymizes a source.
+ *
+ * @param source data to anonymize
+ *
+ * @return the anonymized string represantation of a source
+ */
+public static String anonymizeObject(Object source)
+
+// ### DATA FLOW ###
+
+/**
+ * Requests permission for data flow by the user at runtime. This is done by a trusted plib popup, where dhe data
+ * flow is visualized and some information is shown to the user. The user can either agree on the data flow or denies it.
+ * In case where the object as the data to send somewhere is a string, the user can also select anonymize.
+ * Once the user grants data flow, regarded data is marked to be allowed to leave the app or device. In form of a visible
+ * checkbox, the user can let the plib persist given decisions for future requests. Such persistent decisions are regarded as unique in
+ * dependency of following attributes: the data type (class name), the decription about the flow (defined by the caller of this method within the data source wrapper),
+ * and the current stack trace of called method.
+ * <p>
+ * THIS METHOD IS REGARDED AS A LEGAL SINK THROUGH THE PLIB!
+ *
+ * @param uiActivity Since a popup is shown to the user, an ui in form of an activity is required.
+ * @param dataSource A generous wrapper for the data, for which a flow is requested. See <code>PLibDataSource</code>.
+ * @param flowCallback A <code>PLibFlowCallback</code> callback, in which in dependeny of the user selection, represented data will be available: <code>null</code> when flow is not
+ * permited, the original content if it is permited or an anomyzed representation, if the user selected grant.
+ */
+public static void de.dailab.apppets.plib.async.PLibGrantFlow.requestDataFlow(final Activity uiActivity, final PLibDataSource dataSource, final PLibFlowCallback flowCallback)
+
+/**
+ * Removes all made persistent decisions from the plib.
+ *
+ * @param context the context
+ */
+public static void de.dailab.apppets.plib.async.PLibGrantFlow.removeAllFlowDecisions(final Context context)

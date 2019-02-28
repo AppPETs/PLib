@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:id="@+id/action_renew_cert"
+        android:icon="@drawable/dai_own_cert"
+        android:title="@string/theplib_replace_cert"
+        app:showAsAction="collapseActionView"/>
+
+    <item
+        android:id="@+id/action_info"
+        android:icon="@drawable/dai_info"
+        android:title="@string/theplib_info"
+        app:showAsAction="collapseActionView"/>
+
+
+    />
+
+</menu>

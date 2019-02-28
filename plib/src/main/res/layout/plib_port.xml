@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/root"
+              xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/TextView_Pwd1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:text="@string/theplib_please_enter_the_listen_server_port"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/EditText_Port"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="11224"
+        android:inputType="number"
+        android:paddingLeft="10dp"/>
+
+
+</LinearLayout>

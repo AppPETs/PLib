@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_reset_flow"
+        android:icon="@drawable/dai_trash"
+        android:title="@string/theplib_reset_decisions"
+        app:showAsAction="collapseActionView"/>
+
+    <item
+        android:id="@+id/action_debug_decisions_flow"
+        android:icon="@drawable/dai_trash"
+        android:title="@string/theplib_debug_request_decisions"
+        app:showAsAction="collapseActionView"/>
+
+    <item
+        android:id="@+id/action_info"
+        android:icon="@drawable/dai_info"
+        android:title="@string/theplib_info"
+        app:showAsAction="collapseActionView"/>
+
+
+    />
+
+</menu>

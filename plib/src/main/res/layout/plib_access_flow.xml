@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/entry_original"
+            android:orientation="vertical"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/the_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="@string/theplib_apppets_privacy_protection_access"
+            android:textColor="#343434"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:typeface="sans"/>
+
+        <View
+            android:id="@+id/tb0"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@+id/the_title"
+            android:background="@android:color/darker_gray"/>
+
+        <TableLayout
+            android:id="@+id/tb1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tb0"
+            android:shrinkColumns="0"
+            android:stretchColumns="0"
+            >
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="0dp">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:paddingLeft="4dp"
+                    android:textColor="#343434"
+                    android:textSize="14sp"
+                    android:textStyle="italic"
+                    android:typeface="sans"/>
+
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="0dp">
+
+                <!-- Spalte 3 -->
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:paddingLeft="4dp"
+                    android:text="@string/theplib_title_app_name"
+                    android:textColor="#343434"
+                    android:textSize="14sp"
+                    android:textStyle="normal"
+                    android:typeface="sans"/>
+
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="0dp">
+
+                <TextView
+                    android:id="@+id/apppets_flow_appname_tv"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:paddingLeft="4dp"
+                    android:text="@string/app_name"
+                    android:textColor="#343434"
+                    android:textSize="14sp"
+                    android:textStyle="italic"
+                    android:typeface="sans"/>
+
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="0dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:paddingLeft="4dp"
+                    android:textColor="#343434"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:typeface="sans"/>
+            </TableRow>
+
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="0dp">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:paddingLeft="4dp"
+                    android:text="@string/theplib_title_description"
+                    android:textColor="#343434"
+                    android:textSize="14sp"
+                    android:textStyle="normal"
+                    android:typeface="sans"/>
+
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="0dp">
+
+                <TextView
+                    android:id="@+id/apppets_flow_description_tv"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:paddingLeft="4dp"
+                    android:textColor="#343434"
+                    android:textSize="14sp"
+                    android:textStyle="italic"
+                    android:typeface="sans"/>
+
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="0dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:paddingLeft="4dp"
+                    android:textColor="#343434"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:typeface="sans"/>
+            </TableRow>
+
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="0dp">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:paddingLeft="4dp"
+                    android:text="@string/theplib_data"
+                    android:textColor="#343434"
+                    android:textSize="14sp"
+                    android:textStyle="normal"
+                    android:typeface="sans"/>
+
+
+            </TableRow>
+
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="0dp">
+
+                <TextView
+                    android:id="@+id/apppets_flow_data_tv"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:paddingLeft="4dp"
+                    android:text=""
+                    android:textColor="#343434"
+                    android:textSize="14sp"
+                    android:textStyle="italic"
+                    android:typeface="sans"/>
+
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="0dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:paddingLeft="4dp"
+                    android:textColor="#343434"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:typeface="sans"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="0dp">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:paddingLeft="4dp"
+                    android:text="@string/theplib_apppets_access_permission"
+                    android:textColor="#343434"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:typeface="sans"/>
+
+
+            </TableRow>
+
+
+        </TableLayout>
+
+        <View
+            android:id="@+id/tb2"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@+id/tb1"
+            android:background="@android:color/darker_gray"/>
+
+        <TextView
+            android:id="@+id/tb3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tb2"
+            android:gravity="left"
+            android:paddingLeft="4dp"
+            android:text=""
+            android:textColor="#343434"
+            android:textSize="10sp"
+            android:textStyle="normal"
+            android:typeface="sans"/>
+
+        <CheckBox
+            android:id="@+id/apppets_flow_decision_cb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tb3"
+            android:text="@string/theplib_remember_decision"
+            android:textColor="#343434"
+            android:textSize="14sp"
+            />
+
+        <RelativeLayout
+            android:id="@+id/rl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/apppets_flow_decision_cb">
+
+            <CheckBox
+                android:id="@+id/cb_dummy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="#343434"
+                android:textSize="14sp"
+                android:visibility="invisible"
+
+                />
+
+            <CheckBox
+                android:id="@+id/apppets_flow_decision_all_cb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/cb_dummy"
+                android:text="@string/theplib_remember_decision_everywhere"
+                android:textColor="#343434"
+                android:textSize="14sp"
+                android:visibility="invisible"
+
+                />
+
+
+
+        </RelativeLayout>
+
+
+
+            <RadioGroup
+                android:id="@+id/rb"
+                android:layout_below="@id/rl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+            <RadioButton
+                android:id="@+id/rbPlain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:checked="true"
+                android:text="@string/theplib_plain"/>
+
+            <RadioButton
+                android:id="@+id/rbAnonymized"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="15dp"
+                android:text="@string/theplib_anonymized"/>
+
+            <RadioButton
+                android:id="@+id/rbPseudonymized"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:text="@string/theplib_pseudonymized"/>
+
+            <RadioButton
+                android:id="@+id/rbEncrypted"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:text="@string/theplib_encrypted"/>
+
+            </RadioGroup>
+
+
+
+
+
+    </RelativeLayout>
+
+</ScrollView>

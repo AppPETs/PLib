@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin">
+
+    <View
+        android:id="@+id/line1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@android:color/darker_gray"/>
+
+    <TableLayout
+        android:id="@+id/table"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line1"
+        android:stretchColumns="0">
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="0dp"
+            android:layout_weight="1">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/line1"
+                android:background="@color/red"
+                android:clickable="true"
+                android:focusable="true"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/main_title"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:paddingLeft="4dp"
+                    android:paddingRight="4dp"
+                    android:singleLine="true"
+                    android:text="@string/theplib"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:typeface="sans"/>
+
+                <TextView
+                    android:id="@+id/sub_title"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/main_title"
+                    android:gravity="left"
+                    android:paddingBottom="2dp"
+                    android:paddingLeft="4dp"
+                    android:paddingRight="4dp"
+                    android:singleLine="true"
+                    android:text="@string/theplib_settings"
+                    android:textColor="#343434"
+                    android:textSize="12sp"
+                    android:textStyle="italic"/>
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/add"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/plib_layout_selector2"
+                android:gravity="center_horizontal"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:src="@drawable/dai_plus"/>
+
+            <ImageView
+                android:id="@+id/sort"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/plib_layout_selector2"
+                android:gravity="center_horizontal"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:src="@drawable/dai_sort"/>
+
+
+            <ImageView
+                android:id="@+id/up"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/plib_layout_selector2"
+                android:gravity="center_horizontal"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:src="@drawable/dai_up"/>
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@color/red"
+                android:gravity="center_horizontal"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:src="@mipmap/apppets"/>
+
+        </TableRow>
+    </TableLayout>
+
+    <View
+        android:id="@+id/line2"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/table"
+        android:background="@android:color/darker_gray"/>
+
+
+    <TextView
+        android:id="@+id/list_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/line2"
+        android:background="@drawable/plib"
+        android:gravity="left"
+        android:paddingLeft="4dp"
+        android:singleLine="true"
+        android:text="@string/theplib_content"
+        android:textColor="#343434"
+        android:textSize="10sp"
+        android:textStyle="italic"
+        android:typeface="sans"/>
+
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/list_title"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/plib"
+        android:fastScrollEnabled="true"/>
+
+
+</RelativeLayout>

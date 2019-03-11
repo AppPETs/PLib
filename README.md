@@ -6,6 +6,7 @@
 The __PLib__ is a framework for Android that provides functionality to handle personal information appropriately.
 
 - Repository: https://github.com/AppPETs/PLib
+- Documentaion: https://github.com/AppPETs/PLib/wiki/Documentation
 - Example-App: https://github.com/AppPETs/<>
 - Issues: https://github.com/AppPETs/PLib/issues
 

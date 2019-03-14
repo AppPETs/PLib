@@ -7,7 +7,7 @@ The __PLib__ is a framework for Android that provides functionality to handle pe
 
 - Repository: https://github.com/AppPETs/PLib
 - Documentaion: https://github.com/AppPETs/PLib/wiki/Documentation
-- Example-App: https://github.com/AppPETs/<>
+- Example-App: https://github.com/AppPETs/PLib_Example
 - Issues: https://github.com/AppPETs/PLib/issues
 
 Several technologies can be used to enhance privacy, also known as privacy-enhancing technologies (PETs). Many PETs are known in research, but are not easily available to developers. The goal of this project is to make PETs accessible to app developers. The following functionality has been implemented in a way that it can be easily used by application developers.

@@ -128,5 +128,10 @@ private data.
         PLibGrantAccess.getAndroidId(activity, "Please grant access to the android id", cb, true);
     }
 ```
+## Authors
+
+[Arik Messerman](https://github.com/bedni7)
+
+[Victor Bieszka](https://github.com/BieVic)
 
 ---
